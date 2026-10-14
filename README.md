@@ -1,165 +1,167 @@
-<p align="center">
-  <img src="public/assets/artwork/charmander.png" width="80" alt="Charmander">
-  <img src="public/assets/artwork/squirtle.png" width="80" alt="Squirtle">
-  <img src="public/assets/artwork/bulbasaur.png" width="80" alt="Bulbasaur">
-</p>
+# PokéSurvivor · Mundo Misterioso
 
-<h1 align="center">Poké World Survivors</h1>
+Bullet-heaven con Pokémon al estilo de Survivor.io y Megabonk, con sprites de
+*Pokémon Mundo Misterioso*, capa roguelike, **966 Pokémon de las 9 generaciones**,
+shinies y gacha por región. Música y efectos compuestos para el juego.
 
-<p align="center">
-  <strong>Um clone de Vampire Survivors com tema Pokémon — open source e feito por diversão!</strong>
-</p>
+HTML + CSS + JavaScript vanilla sobre Canvas 2D. Sin build, sin dependencias y
+**todo local**: no necesita internet para jugar.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Phaser-3.90-8B5CF6?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PC9zdmc+" alt="Phaser 3">
-  <img src="https://img.shields.io/badge/Vite-6.3-646CFF?logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/Tauri-2.x-FFC131?logo=tauri&logoColor=white" alt="Tauri">
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
-  <img src="https://img.shields.io/github/stars/giovanneluna/poke-survivors?style=social" alt="Stars">
-</p>
+> **Aviso sobre criptomonedas / Crypto disclaimer**
+>
+> PokéSurvivor **no tiene ninguna criptomoneda, token ni NFT oficial**, y yo no
+> he creado ninguno. Cualquier token que use el nombre del juego lo han creado
+> terceros. **No me hago cargo de ninguna compra, venta o inversión** que hagas
+> con ellos y nada de lo que hay aquí es una recomendación de inversión. El
+> juego es gratis y lo seguirá siendo.
+>
+> PokéSurvivor has **no official cryptocurrency, token or NFT**, and I have not
+> created any. Any token using the game's name was created by third parties.
+> **I take no responsibility for any purchase, sale or investment** you make
+> with them, and nothing here is investment advice. The game is free and will
+> stay free.
 
-<p align="center">
-  <!-- TODO: Substituir por GIF real do gameplay -->
-  <em>Escolha seu starter, sobreviva a hordas de Pokémon selvagens, derrote bosses e evolua!</em>
-</p>
+## Jugar
 
----
+Doble clic en `index.html`. Crea una cuenta o entra como invitado, haz el test
+de personalidad y a la mazmorra.
 
-## O que é?
+| Tecla | Acción |
+|---|---|
+| `W` `A` `S` `D` / flechas | Moverse |
+| `1` `2` `3` `4` | Elegir el movimiento activo |
+| `Q` / `E` | Ciclar movimientos |
+| `Esc` / `P` | Pausa |
 
-Poké World Survivors combina a mecânica de **Vampire Survivors** com o universo **Pokémon**. Escolha entre Charmander, Squirtle ou Bulbasaur, enfrente waves de inimigos, colete XP, desbloqueie ataques icônicos e evolua seu Pokémon até a forma final.
+**En móvil o tablet** (en horizontal): pon el dedo en cualquier sitio y arrastra
+para moverte (el joystick aparece donde tocas), toca un ataque de abajo para
+cambiarlo y el botón de arriba a la derecha para pausar. Se puede instalar como
+app ("Añadir a pantalla de inicio"). En **Ajustes** hay sonido, calidad gráfica
+(con modo automático), números de daño, menos sacudidas, FPS y la cuenta.
 
-### Destaques
+El Pokémon ataca solo con el movimiento activo (o con todos los de un
+**vínculo**: cada legendario vencido deja fusionar movimientos para lanzarlos a
+la vez desde un solo hueco, hasta 4). Las rocas, cofres y la hierba
+alta se rompen; las paredes y los árboles bloquean los disparos enemigos; el
+agua frena y la lava quema (también a los enemigos).
 
-- **3 starters jogáveis** com cadeia evolutiva completa (base → stage1 → stage2)
-- **77 ataques** fiéis ao universo Pokémon (Ember, Water Gun, Razor Leaf, Dragon Pulse...)
-- **8 fases** com 20+ waves cada, bosses únicos e dificuldade progressiva
-- **Sistema de evolução de ataques** — combine nível máximo + held item + forma evolutiva
-- **Gacha box** — drops de bosses com recompensas aleatórias
-- **80+ Pokémon** com sprites animadas de walk (PMDCollab)
-- **SFX 100% procedural** via Web Audio API — zero arquivos de áudio
-- **Desktop nativo** via Tauri (Windows) + versão web
+En el mapa hay **altares de poder**, **manantiales** que curan, **cofres con
+candado** (quédate a su lado unos segundos) y **trampas** que también dañan a
+los enemigos. A veces se abre una **grieta**: entra y lucharás contra un
+**legendario** en una arena aparte.
 
----
+Hay **tabla de tipos** (un Rayo Burbuja le quita más a un Charmander) y,
+de vez en cuando, **climas** (sol, lluvia, arena, nieve, niebla) que potencian
+unos tipos y debilitan otros.
 
-## Screenshots
+Cada día hay **misiones** (y semanales) que dan tickets y monedas; los
+**logros** dan medallas y títulos, y tu **perfil** enseña tus 3 Pokémon
+favoritos, tus marcas y tus medallas. En las runs encuentras **objetos** (Restos,
+Cinta Elección...) y tus movimientos **evolucionan** al máximo nivel. Los
+enemigos tienen personalidad: curan, ponen escudos, llaman a su manada o atacan
+con aviso en el suelo.
 
-<!-- TODO: Adicionar screenshots reais aqui -->
-<!-- ![Gameplay](docs/screenshots/gameplay.png) -->
-<!-- ![Boss Fight](docs/screenshots/boss.png) -->
-<!-- ![Level Up](docs/screenshots/levelup.png) -->
+Las **mejoras** son de cada Pokémon. El **gacha** va con **tickets** que se
+ganan jugando (×1 de algunos Pokémon, ×10 de jefes y legendarios), y se tira
+en una tragaperras pixel art.
 
-> Ajude-nos a adicionar screenshots! Jogue e tire prints interessantes.
+Cada enemigo tiene 1/4096 de salir **shiny**: brilla, una flecha en el borde de
+la pantalla te dice dónde está, y si lo derrotas te lo quedas. En el gacha sale
+shiny 1 de cada 100 tiradas. En la colección eliges tu compañero en versión
+normal o shiny.
 
----
+La música suena tras el primer clic (los navegadores no dejan reproducir sonido
+antes). Volumen y silencio: botón del altavoz arriba a la derecha, o en la pausa.
 
-## Jogar
+El guardado vive en el `localStorage` del navegador: si borras los datos del
+sitio, se pierde.
 
-### Web (mais rápido)
+En `videos/` hay grabaciones del juego (con su música): un combate contra un
+jefe, la captura de un shiny salvaje y un shiny en el gacha.
 
-```bash
-git clone https://github.com/giovanneluna/poke-survivors.git
-cd poke-survivors
-npm install
-npm run dev
+## Guardado en la nube y publicación
+
+- **Base de datos (Firebase):** cuentas con nombre + contraseña o Google, y la
+  partida se sigue en cualquier ordenador. Pasos en [docs/FIREBASE.md](docs/FIREBASE.md).
+  Sin configurar, el juego guarda sólo en el navegador, como antes.
+- **Jugar con amigos (hasta 4) y ranking:** con cuenta en la nube, menú
+  **Amigos** (añadir por apodo, invitar a tu sala) y **Ranking** (tiempo
+  aguantado: solo o grupo, de hoy a histórico, amigos, por Pokémon).
+- **Publicar gratis en GitHub Pages:** [docs/PUBLICAR.md](docs/PUBLICAR.md).
+- Si se juega en dos ordenadores a la vez o sin conexión, las partidas se
+  **fusionan**: las colecciones se unen (nunca se pierde un Pokémon ni un
+  shiny), mejoras y estadísticas se quedan con el máximo, y monedas y
+  compañero con la versión más reciente. Los cambios de otro ordenador llegan
+  en directo.
+
+## Licencia
+
+Código bajo MIT. Los sprites (CC BY-NC 4.0), la fuente (OFL) y las marcas de
+Pokémon tienen sus propias condiciones: ver [LICENSE](LICENSE) y
+[CREDITS.md](CREDITS.md). Proyecto de fan sin ánimo de lucro.
+
+## Estructura
+
+```
+index.html              pantallas + orden de carga
+css/style.css           interfaz estilo Mundo Misterioso
+assets/pokemon/{dex}/   hojas de sprites PMD (Idle, Walk, Attack, Shoot, Charge, Hurt, Faint)
+assets/pokemon/{dex}/s/ las mismas en versión shiny
+assets/fonts/           Pixelify Sans (OFL) y su versión con números redibujados (tools/make_font.py)
+js/
+  net/      social (apodo, amigos, salas), net (WebRTC + relé),
+            coop (partida en grupo), ranking
+  core/     util, db (guardado), audio (sintetizador + efectos), input,
+            sprites (animador PMD), camera
+  data/     pokedex*, sprites-meta*, moves, starters (+ test), enemies,
+            upgrades, music (partituras)
+  world/    tiles (pixel art en código), world (terreno, objetos, colisiones)
+  entities/ player, enemy, projectile, pickup, fx
+  systems/  combat, spawner, levelup, gacha
+  ui/       icons (pixel art), ui, hud, login, test, menu, gacha-ui, run-ui,
+            social-ui, ranking-ui
+  game.js   flujo y bucle principal
+tools/      scripts que regeneran los ficheros marcados con *
 ```
 
-Acesse `http://localhost:8080` no navegador.
-
-### Desktop (Tauri — requer Rust)
-
-```bash
-npm run tauri:dev    # Dev com hot reload
-npm run tauri:build  # Build executável
-```
-
----
-
-## Contribuir
-
-**Estamos procurando colaboradores!** Artistas, devs TypeScript/Phaser, game designers — toda ajuda conta.
-
-Veja o [**CONTRIBUTING.md**](CONTRIBUTING.md) para o guia completo.
-
-### O que mais precisamos
-
-| Tipo | Exemplos | Dificuldade |
-|------|----------|-------------|
-| Sprites/Arte | Novos Pokémon, tilesets, efeitos | Variada |
-| Ataques | Implementar novos ataques (77 feitos, 340+ disponíveis) | Média |
-| Inimigos | Novos wild Pokémon e bosses | Média |
-| Balanceamento | Testar e ajustar dano, cooldowns, spawn rates | Fácil |
-| UI/UX | Melhorar menus, HUD, overlays | Média |
-| QA | Testar, reportar bugs, sugerir melhorias | Fácil |
-
-Procure issues com label [`good first issue`](https://github.com/giovanneluna/poke-survivors/labels/good%20first%20issue) para começar!
-
----
-
-## Arquitetura
+`*` = generado. Para rehacerlos (necesita Python 3 + Pillow e internet, sólo esa vez):
 
 ```
-src/
-├── attacks/          # 77 ataques (1 arquivo por ataque, implementa interface Attack)
-├── audio/            # SFX procedural (Web Audio API, zero arquivos)
-├── data/
-│   ├── attacks/      # Registry, categorias, evoluções
-│   ├── enemies/      # Config individual + phases/ (8 fases)
-│   ├── items/        # Definições de upgrades e held items
-│   └── sprites/      # Config de spritesheets (starters, enemies)
-├── entities/         # Player, Enemy, Boss, Pickup, Destructible
-├── scenes/           # Boot → Title → Select → Game + UI + Pokedex
-├── systems/          # Collision, Spawn, Pickup, SpatialHashGrid
-├── ui/               # MiniMap, VirtualJoystick, HUD
-├── config.ts         # Constantes globais
-└── types.ts          # Tipos TypeScript
+python tools/fetch_sprites.py    # sprites normal y shiny + js/data/sprites-meta.js
+                                 # (~20 min; se puede cortar y relanzar: usa tools/cache/)
+python tools/fetch_pokedex.py    # js/data/pokedex.js
+python tools/fetch_credits.py    # CREDITS.md
 ```
 
-**Fluxo de cenas:** `BootScene` (carrega tudo) → `TitleScene` → `SelectScene` → `GameScene` + `UIScene` (paralelas)
+## Notas de implementación
 
-**Padrões principais:**
-- Ataques implementam `interface Attack { type, level, update(), upgrade(), destroy() }`
-- Inimigos usam `SpatialHashGrid` para queries de proximidade O(1)
-- Projéteis inimigos compartilham pool `enemyProjectiles` (maxSize: 60)
-- Qualidade gráfica configurável via `shouldShowVfx()` guard
+- **Sprites PMD.** Columnas = fotogramas, filas = 8 direcciones (Down, DownRight,
+  Right, UpRight, Up, UpLeft, Left, DownLeft — verificado con los `-Offsets.png`).
+  Cada animación tiene su propio tamaño de fotograma, así que se alinean por el
+  **ancla al suelo** sacada del `-Shadow.png`; sin eso el sprite saltaría al atacar.
+- **Coordenadas.** `(x, y)` de una entidad son sus **pies**. Las colisiones
+  ocurren en el plano del suelo; los proyectiles vuelan en ese plano y se dibujan
+  elevados con su sombra debajo.
+- **Mundo.** Chunks de 16×16 tiles: los *datos* (terreno, objetos) son baratos y
+  se generan siempre; la *imagen* se hornea a resolución de arte escribiendo en un
+  `ImageData` (~4 ms por chunk en Chrome) y sólo para los visibles.
+- **Rendimiento.** Rejilla espacial de enemigos reconstruida cada frame. Con 420
+  enemigos, simulación + render completo ≈ 3 ms por frame en Chrome.
+- **Metadatos en `.js`, no `.json`**, porque `fetch()` está bloqueado en `file://`.
+- **Shiny.** Los shiny de SpriteCollab son el mismo dibujo con otra paleta; están
+  en `s/` y sólo 30 tienen geometría distinta (campo `sa` en los metadatos).
+  Las hojas se guardan como PNG con paleta exacta: misma imagen, la mitad de peso.
+- **Audio.** Sintetizador Web Audio con planificador anticipado (programa las
+  notas 150 ms por delante) y reverb por convolución con un impulso generado.
+  Las partituras están en `js/data/music.js` en un formato de texto propio.
+  Los efectos tienen separación mínima entre repeticiones y un tope de voces,
+  para que 400 enemigos golpeados a la vez no saturen.
+- **Iconos.** Mapas de caracteres convertidos a canvas y data URLs; siempre a
+  múltiplos enteros de su tamaño para que el píxel quede limpio.
 
----
+## Créditos y licencia
 
-## Fontes dos Assets
-
-| Recurso | Fonte | Uso |
-|---------|-------|-----|
-| Sprites de walk (80+) | [PMDCollab/SpriteCollab](https://github.com/PMDCollab/SpriteCollab) | Pokémon jogáveis e inimigos |
-| Sprites de ataques (340+) | [pokemonAutoChess](https://github.com/keldaanCommunity/pokemonAutoChess) | Projéteis e efeitos |
-| Sprites de itens | [PokeAPI/sprites](https://github.com/PokeAPI/sprites) | Upgrades e held items |
-| Artwork oficial | [PokeAPI/sprites](https://github.com/PokeAPI/sprites) | Tela título e seleção |
-
-> Este é um projeto fan-made, sem fins comerciais. Pokémon pertence a Nintendo/Game Freak/The Pokémon Company.
-
----
-
-## Tech Stack
-
-| Tecnologia | Versão | Por quê |
-|------------|--------|---------|
-| [Phaser 3](https://phaser.io/) | 3.90 | Game framework robusto com physics Arcade |
-| [TypeScript](https://www.typescriptlang.org/) | 5.7 | Strict mode, zero `any` |
-| [Vite](https://vitejs.dev/) | 6.3 | HMR instantâneo, build rápido |
-| [Tauri](https://tauri.app/) | 2.x | Desktop nativo com bundle leve (~10MB) |
-
----
-
-## Comunidade
-
-- [Discord](https://discord.gg/pFqPHV5zZ2) — Chat, ideias, showcase
-- [Issues](https://github.com/giovanneluna/poke-survivors/issues) — Bugs e feature requests
-- [Discussions](https://github.com/giovanneluna/poke-survivors/discussions) — Perguntas e ideias gerais
-
----
-
-## License
-
-[MIT](LICENSE) — use, modifique e distribua livremente.
-
-> Pokémon e todos os nomes relacionados são marcas registradas de Nintendo/Game Freak/The Pokémon Company. Este projeto é fan-made e não possui afiliação oficial.
+Sprites de [SpriteCollab](https://github.com/PMDCollab/SpriteCollab) bajo
+**CC BY-NC 4.0** — uso **no comercial** y con atribución; la lista de artistas
+está en [`CREDITS.md`](CREDITS.md). Pokémon es propiedad de Nintendo, Creatures
+Inc. y GAME FREAK. Proyecto de fan sin ánimo de lucro.
